@@ -11,13 +11,6 @@ import Foundation
 import pop
 import SnapKit
 
-private struct ConcreteConstraintInstallInfo {
-    
-    weak var view: View? = nil
-    let layoutConstraints: NSHashTable
-    
-}
-
 extension Constraint {
     
     var layoutConstraint: LayoutConstraint? {
@@ -31,14 +24,14 @@ extension Constraint {
         return nil
     }
     
-    func layoutConstraints() -> [AnyObject] {
+    private func layoutConstraints() -> [AnyObject] {
         let anyobject: AnyObject = valueForKey("installInfo", self)
         let installInfo = valueForKey("installInfo", self) as! UIView
         return installInfo.constraints()
     }
 }
 
-func valueForKey(key: String, fromObject: AnyObject) -> AnyObject {
+private func valueForKey(key: String, fromObject: AnyObject) -> AnyObject {
     let ivar = class_getInstanceVariable(fromObject.dynamicType, key)
     return object_getIvar(fromObject, ivar)
 }
