@@ -14,8 +14,8 @@ import SnapKit
 extension Constraint {
     
     var layoutConstraint: LayoutConstraint? {
-        for layoutConstraint in layoutConstraints() {
-            if let constraint = valueForKey("snp_constraint", layoutConstraint) as? Constraint {
+        for layoutConstraint in gs_layoutConstraints() {
+            if let constraint = gs_valueForKey("snp_constraint", layoutConstraint) as? Constraint {
                 if self === constraint {
                     return layoutConstraint as? LayoutConstraint
                 }
@@ -24,14 +24,14 @@ extension Constraint {
         return nil
     }
     
-    private func layoutConstraints() -> [AnyObject] {
-        let anyobject: AnyObject = valueForKey("installInfo", self)
-        let installInfo = valueForKey("installInfo", self) as! UIView
+    private func gs_layoutConstraints() -> [AnyObject] {
+        let installInfo = gs_valueForKey("installInfo", self) as! UIView
         return installInfo.constraints()
     }
+    
 }
 
-private func valueForKey(key: String, fromObject: AnyObject) -> AnyObject {
+private func gs_valueForKey(key: String, fromObject: AnyObject) -> AnyObject {
     let ivar = class_getInstanceVariable(fromObject.dynamicType, key)
     return object_getIvar(fromObject, ivar)
 }
