@@ -5,7 +5,7 @@
 //  Created by Gesen on 15/6/8.
 //  Copyright (c) 2015年 Gesen. All rights reserved.
 //
-//  POP(1.0.7) + SnapKit(0.12.0)
+//  POP(1.0.7) + SnapKit(0.13.0)
 
 import Foundation
 import pop
