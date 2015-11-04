@@ -21,7 +21,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#if os(iOS)
+#if os(iOS) || os(tvOS)
 import UIKit
 #else
 import AppKit
@@ -37,7 +37,7 @@ public extension View {
             return objc_getAssociatedObject(self, &labelKey) as? String
         }
         set {
-            objc_setAssociatedObject(self, &labelKey, newValue, objc_AssociationPolicy(OBJC_ASSOCIATION_COPY_NONATOMIC))
+            objc_setAssociatedObject(self, &labelKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
     }
     
@@ -53,7 +53,7 @@ public extension LayoutConstraint {
             return objc_getAssociatedObject(self, &labelKey) as? String
         }
         set {
-            objc_setAssociatedObject(self, &labelKey, newValue, objc_AssociationPolicy(OBJC_ASSOCIATION_COPY_NONATOMIC))
+            objc_setAssociatedObject(self, &labelKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
     }
 
@@ -149,7 +149,7 @@ private extension NSLayoutRelation {
 private extension NSLayoutAttribute {
     
     private var snp_description: String {
-        #if os(iOS)
+        #if os(iOS) || os(tvOS)
         switch self {
         case .NotAnAttribute:       return "notAnAttribute"
         case .Top:                  return "top"
@@ -187,6 +187,7 @@ private extension NSLayoutAttribute {
         case .CenterX:              return "centerX"
         case .CenterY:              return "centerY"
         case .Baseline:             return "baseline"
+        default:                    return "default"
         }
         #endif
         

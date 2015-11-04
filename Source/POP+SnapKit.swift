@@ -5,7 +5,7 @@
 //  Created by Gesen on 15/6/8.
 //  Copyright (c) 2015年 Gesen. All rights reserved.
 //
-//  POP(1.0.7) + SnapKit(0.13.0)
+//  POP(1.0.8) + SnapKit(0.16.0)
 
 import Foundation
 import pop
@@ -26,12 +26,12 @@ extension Constraint {
     
     private func gs_layoutConstraints() -> [AnyObject] {
         let installInfo = gs_valueForKey("installInfo", self) as! UIView
-        return installInfo.constraints()
+        return installInfo.constraints
     }
     
 }
 
-private func gs_valueForKey(key: String, fromObject: AnyObject) -> AnyObject {
+private func gs_valueForKey(key: String, _ fromObject: AnyObject) -> AnyObject? {
     let ivar = class_getInstanceVariable(fromObject.dynamicType, key)
     return object_getIvar(fromObject, ivar)
 }

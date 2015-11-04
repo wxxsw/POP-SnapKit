@@ -13,7 +13,7 @@
 		185412A11B25448B009CF3D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1854129F1B25448B009CF3D2 /* LaunchScreen.xib */; };
 		185412AD1B25448B009CF3D2 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185412AC1B25448B009CF3D2 /* ExampleTests.swift */; };
 		185412B81B254539009CF3D2 /* POP+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185412B71B254539009CF3D2 /* POP+SnapKit.swift */; };
-		D410EF9CDC9A2C1C3F126D13 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A601F1200FBAE0C4C1526AE /* Pods_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D410EF9CDC9A2C1C3F126D13 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A601F1200FBAE0C4C1526AE /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,7 +192,8 @@
 		185412891B25448B009CF3D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Gesen;
 				TargetAttributes = {
 					185412901B25448B009CF3D2 = {

@@ -1,13 +1,13 @@
 PODS:
-  - pop (1.0.7)
-  - SnapKit (0.13.0)
+  - pop (1.0.8)
+  - SnapKit (0.16.0)
 
 DEPENDENCIES:
-  - pop (~> 1.0.7)
-  - SnapKit (~> 0.13.0)
+  - pop (~> 1.0.8)
+  - SnapKit (~> 0.16.0)
 
 SPEC CHECKSUMS:
-  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
-  SnapKit: 69fe274c71511df89a5591c11437a8b826bfa9eb
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  SnapKit: ddac6b339d571f9d80dbb733585b172ee9eed3cb
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
