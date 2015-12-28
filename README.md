@@ -7,7 +7,7 @@ Open your project in Xcode, then drag 'POP+SnapKit.swift' onto your project (use
 ## Use
 ```Swift
 circle.snp_makeConstraints { make in
-    self.radiusConstaint = make.width.equalTo(self.radius * 2)
+    self.radiusConstaint = make.width.equalTo(self.radius * 2).constraint
 }
 
 let spring = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
@@ -17,4 +17,4 @@ self.radiusConstaint?.layoutConstraint?.pop_addAnimation(spring, forKey: "someKe
 
 ## Dependencies
 - [pop](https://github.com/facebook/pop) (1.0.8) - An extensible iOS and OS X animation library, useful for physics-based interactions.
-- [SnapKit](https://github.com/SnapKit/SnapKit) (0.16.0) - A Swift Autolayout DSL for iOS & OS X
+- [SnapKit](https://github.com/SnapKit/SnapKit) (0.18.0) - A Swift Autolayout DSL for iOS & OS X
