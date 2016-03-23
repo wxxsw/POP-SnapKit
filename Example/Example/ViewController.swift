@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     private func setupCircle() {
         circle.layer.cornerRadius = MinCircleRadius
         circle.backgroundColor = UIColor.whiteColor()
-        circle.addTarget(self, action: "changeRadius", forControlEvents: .TouchUpInside)
+        circle.addTarget(self, action: #selector(changeRadius), forControlEvents: .TouchUpInside)
         view.addSubview(circle)
     }
     

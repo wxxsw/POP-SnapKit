@@ -11,20 +11,9 @@
 		185412991B25448B009CF3D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185412981B25448B009CF3D2 /* ViewController.swift */; };
 		1854129E1B25448B009CF3D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1854129D1B25448B009CF3D2 /* Images.xcassets */; };
 		185412A11B25448B009CF3D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1854129F1B25448B009CF3D2 /* LaunchScreen.xib */; };
-		185412AD1B25448B009CF3D2 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185412AC1B25448B009CF3D2 /* ExampleTests.swift */; };
 		185412B81B254539009CF3D2 /* POP+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185412B71B254539009CF3D2 /* POP+SnapKit.swift */; };
 		D410EF9CDC9A2C1C3F126D13 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A601F1200FBAE0C4C1526AE /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		185412A71B25448B009CF3D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 185412891B25448B009CF3D2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 185412901B25448B009CF3D2;
-			remoteInfo = Example;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A601F1200FBAE0C4C1526AE /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,9 +23,6 @@
 		185412981B25448B009CF3D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1854129D1B25448B009CF3D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		185412A01B25448B009CF3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		185412A61B25448B009CF3D2 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		185412AB1B25448B009CF3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		185412AC1B25448B009CF3D2 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		185412B71B254539009CF3D2 /* POP+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "POP+SnapKit.swift"; sourceTree = "<group>"; };
 		2C057A91BCDC8AB9357499D4 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		6F77DCF41BFEB2AD2D558377 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,13 +34,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D410EF9CDC9A2C1C3F126D13 /* Pods_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		185412A31B25448B009CF3D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +54,6 @@
 			children = (
 				185412B61B254539009CF3D2 /* Source */,
 				185412931B25448B009CF3D2 /* Example */,
-				185412A91B25448B009CF3D2 /* ExampleTests */,
 				185412921B25448B009CF3D2 /* Products */,
 				0A5D05B5B6F1B153540FF48D /* Pods */,
 				6CE01671BE60AF24B4720C60 /* Frameworks */,
@@ -86,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				185412911B25448B009CF3D2 /* Example.app */,
-				185412A61B25448B009CF3D2 /* ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,23 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				185412951B25448B009CF3D2 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		185412A91B25448B009CF3D2 /* ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				185412AC1B25448B009CF3D2 /* ExampleTests.swift */,
-				185412AA1B25448B009CF3D2 /* Supporting Files */,
-			);
-			path = ExampleTests;
-			sourceTree = "<group>";
-		};
-		185412AA1B25448B009CF3D2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				185412AB1B25448B009CF3D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -168,24 +128,6 @@
 			productReference = 185412911B25448B009CF3D2 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		185412A51B25448B009CF3D2 /* ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 185412B31B25448B009CF3D2 /* Build configuration list for PBXNativeTarget "ExampleTests" */;
-			buildPhases = (
-				185412A21B25448B009CF3D2 /* Sources */,
-				185412A31B25448B009CF3D2 /* Frameworks */,
-				185412A41B25448B009CF3D2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				185412A81B25448B009CF3D2 /* PBXTargetDependency */,
-			);
-			name = ExampleTests;
-			productName = ExampleTests;
-			productReference = 185412A61B25448B009CF3D2 /* ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,15 +135,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Gesen;
 				TargetAttributes = {
 					185412901B25448B009CF3D2 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					185412A51B25448B009CF3D2 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 185412901B25448B009CF3D2;
 					};
 				};
 			};
@@ -219,7 +157,6 @@
 			projectRoot = "";
 			targets = (
 				185412901B25448B009CF3D2 /* Example */,
-				185412A51B25448B009CF3D2 /* ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,13 +168,6 @@
 			files = (
 				185412A11B25448B009CF3D2 /* LaunchScreen.xib in Resources */,
 				1854129E1B25448B009CF3D2 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		185412A41B25448B009CF3D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,23 +232,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		185412A21B25448B009CF3D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				185412AD1B25448B009CF3D2 /* ExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		185412A81B25448B009CF3D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 185412901B25448B009CF3D2 /* Example */;
-			targetProxy = 185412A71B25448B009CF3D2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1854129F1B25448B009CF3D2 /* LaunchScreen.xib */ = {
@@ -353,6 +267,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -421,6 +336,7 @@
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.gesen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -433,41 +349,8 @@
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.gesen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		185412B41B25448B009CF3D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
-			};
-			name = Debug;
-		};
-		185412B51B25448B009CF3D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Release;
 		};
@@ -488,15 +371,6 @@
 			buildConfigurations = (
 				185412B11B25448B009CF3D2 /* Debug */,
 				185412B21B25448B009CF3D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		185412B31B25448B009CF3D2 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				185412B41B25448B009CF3D2 /* Debug */,
-				185412B51B25448B009CF3D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
