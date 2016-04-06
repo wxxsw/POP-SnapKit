@@ -3,11 +3,6 @@
 use_frameworks!
 
 target 'Example' do
-pod 'pop', '~> 1.0.8'
-pod 'SnapKit', '~> 0.18.0'
+pod 'pop', '~> 1.0.9'
+pod 'SnapKit', '~> 0.20.0'
 end
-
-target 'ExampleTests' do
-
-end
-

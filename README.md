@@ -1,6 +1,8 @@
 # POP-SnapKit
 Use SnapKit with the Facebook Pop animation framework. Inspired from [MSSPopMasonry](https://github.com/miklselsoe/MSSPopMasonry)
 
+![](https://github.com/wxxsw/POP-SnapKit/blob/master/screenshot.gif)
+
 ## Installation
 Open your project in Xcode, then drag 'POP+SnapKit.swift' onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project.
 
@@ -16,5 +18,5 @@ self.radiusConstaint?.layoutConstraint?.pop_addAnimation(spring, forKey: "someKe
 ```
 
 ## Dependencies
-- [pop](https://github.com/facebook/pop) (1.0.8) - An extensible iOS and OS X animation library, useful for physics-based interactions.
-- [SnapKit](https://github.com/SnapKit/SnapKit) (0.18.0) - A Swift Autolayout DSL for iOS & OS X
+- [pop](https://github.com/facebook/pop) (1.0.9) - An extensible iOS and OS X animation library, useful for physics-based interactions.
+- [SnapKit](https://github.com/SnapKit/SnapKit) (0.20.0) - A Swift Autolayout DSL for iOS & OS X
