@@ -9,6 +9,22 @@ Use SnapKit with the Facebook Pop animation framework. Inspired from [MSSPopMaso
 >
 > To use POP-SnapKit with a project targeting iOS 7, you must to drag `POP+SnapKit.swift` to your iOS Project.
 
+### [CocoaPods](http://cocoapods.org/):
+
+In your `Podfile`:
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod "POP+SnapKit"
+```
+
+And in your `*.swift`:
+```swift
+import POP_SnapKit
+```
+
 ## Use
 ```Swift
 circle.snp_makeConstraints { make in
