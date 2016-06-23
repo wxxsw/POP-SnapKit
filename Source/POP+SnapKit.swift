@@ -11,27 +11,21 @@ import Foundation
 import pop
 import SnapKit
 
-extension Constraint {
-    
-    var layoutConstraint: LayoutConstraint? {
-        for layoutConstraint in gs_layoutConstraints() {
-            if let constraint = gs_valueForKey("snp_constraint", layoutConstraint) as? Constraint {
-                if self === constraint {
-                    return layoutConstraint as? LayoutConstraint
-                }
-            }
-        }
-        return nil
+public extension Constraint {
+    public var layoutConstraint: NSLayoutConstraint? {
+        return layoutConstraints?.flatMap {
+            guard let constraint = _valueForKey("snp_constraint", $0) as? Constraint where constraint === self else { return nil }
+            return $0
+        }.first
     }
     
-    private func gs_layoutConstraints() -> [AnyObject] {
-        let installInfo = gs_valueForKey("installInfo", self) as! UIView
+    public var layoutConstraints: [NSLayoutConstraint]? {
+        guard let installInfo = _valueForKey("installInfo", self) as? UIView else { return nil }
         return installInfo.constraints
     }
-    
 }
 
-private func gs_valueForKey(key: String, _ fromObject: AnyObject) -> AnyObject? {
+private func _valueForKey(key: String, _ fromObject: AnyObject) -> AnyObject? {
     let ivar = class_getInstanceVariable(fromObject.dynamicType, key)
     return object_getIvar(fromObject, ivar)
 }
