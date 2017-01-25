@@ -17,19 +17,19 @@ class ViewController: UIViewController {
     
     // MARK: Properties
     
-    private let circle = UIButton()
-    private var radiusConstaint: Constraint?
-    private var radius: CGFloat! {
+    fileprivate let circle = UIButton()
+    fileprivate var radiusConstaint: Constraint?
+    fileprivate var radius: CGFloat! {
         willSet {
             let constraint = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-            constraint.springBounciness = 10
-            constraint.toValue = newValue * 2
-            self.radiusConstaint?.layoutConstraint?.pop_addAnimation(constraint, forKey: "constraint")
+            constraint!.springBounciness = 10
+            constraint!.toValue = newValue * 2
+            self.radiusConstaint?.layoutConstraint?.pop_add(constraint, forKey: "constraint")
             
             let cornerRadius = POPSpringAnimation(propertyNamed: kPOPLayerCornerRadius)
-            cornerRadius.springBounciness = 10
-            cornerRadius.toValue = newValue
-            circle.layer.pop_addAnimation(cornerRadius, forKey: "cornerRadius")
+            cornerRadius!.springBounciness = 10
+            cornerRadius!.toValue = newValue
+            circle.layer.pop_add(cornerRadius, forKey: "cornerRadius")
         }
     }
     
@@ -45,24 +45,24 @@ class ViewController: UIViewController {
     
     // MARK: Setups
     
-    private func setupCircle() {
+    fileprivate func setupCircle() {
         circle.layer.cornerRadius = MinCircleRadius
-        circle.backgroundColor = UIColor.whiteColor()
-        circle.addTarget(self, action: #selector(changeRadius), forControlEvents: .TouchUpInside)
+        circle.backgroundColor = UIColor.white
+        circle.addTarget(self, action: #selector(changeRadius), for: .touchUpInside)
         view.addSubview(circle)
     }
     
-    private func setupLayout() {
-        circle.snp_makeConstraints { make in
+    fileprivate func setupLayout() {
+        circle.snp.makeConstraints { make in
             make.centerX.centerY.equalTo(self.view)
             self.radiusConstaint = make.width.equalTo(self.radius * 2).constraint
-            make.height.equalTo(self.circle.snp_width)
+            make.height.equalTo(self.circle.snp.width)
         }
     }
     
     // MARK: Private
     
-    @objc private func changeRadius() {
+    @objc fileprivate func changeRadius() {
         radius = (radius == MinCircleRadius ? MaxCircleRadius : MinCircleRadius)
     }
 }
