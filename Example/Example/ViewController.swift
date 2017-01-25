@@ -29,7 +29,7 @@ class ViewController: UIViewController {
             let cornerRadius = POPSpringAnimation(propertyNamed: kPOPLayerCornerRadius)
             cornerRadius!.springBounciness = 10
             cornerRadius!.toValue = newValue
-            circle.layer.pop_add(cornerRadius, forKey: "cornerRadius")
+            self.circle.layer.pop_add(cornerRadius, forKey: "cornerRadius")
         }
     }
     

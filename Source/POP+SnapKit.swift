@@ -13,15 +13,11 @@ import SnapKit
 
 public extension Constraint {
     public var layoutConstraint: LayoutConstraint? {
-        return layoutConstraints?.flatMap {
-            guard let constraint = _valueForKey(key: "snp.constraint", $0) as? Constraint, constraint === self else { return nil }
-            return $0 as? LayoutConstraint
-            }.first
+        return layoutConstraints?.first
     }
     
-    public var layoutConstraints: [NSLayoutConstraint]? {
-        guard let installInfo = _valueForKey(key: "installInfo", self) as? UIView else { return nil }
-        return installInfo.constraints
+    public var layoutConstraints: [LayoutConstraint]? {
+        return _valueForKey(key: "layoutConstraints", self) as? [LayoutConstraint] 
     }
 }
 
