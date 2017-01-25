@@ -4,5 +4,5 @@ use_frameworks!
 
 target 'Example' do
 pod 'pop', '~> 1.0.9'
-pod 'SnapKit', '~> 0.21.1'
+pod 'SnapKit', '~> 3.0.2'
 end
