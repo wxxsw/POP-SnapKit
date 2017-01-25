@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "POP+SnapKit"
-  s.version       = "0.21.1"
+  s.version       = "3.0.2"
   s.summary       = "Use SnapKit with the Facebook Pop animation framework."
   s.homepage	  = "https://github.com/wxxsw/POP-SnapKit"
   s.license       = "MIT"
