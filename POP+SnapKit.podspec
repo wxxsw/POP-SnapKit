@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.dependency "pop", "~> 1.0.9"
-  s.dependency "SnapKit", "~> 3.0.2”
+  s.dependency "SnapKit", "~> 3.0.2"
 
 end
